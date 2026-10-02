@@ -9,6 +9,10 @@ class CoreTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.path = Path(self.temp.name) / 'test.sqlite'
         self.config = json.loads((Path(__file__).resolve().parent / 'scenario.json').read_text(encoding='utf-8'))
+        with c.sqlite_session(self.path) as connection:
+            connection.execute('SELECT 1')
+        with self.assertRaises(sqlite3.ProgrammingError):
+            connection.execute('SELECT 1')
 
     def warehouse(self):
         return c.Warehouse(self.path)
