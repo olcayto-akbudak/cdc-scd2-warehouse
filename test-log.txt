@@ -1,0 +1,13 @@
+test_atomic_conflict (test_core.CoreTests.test_atomic_conflict) ... ok
+test_bad_time (test_core.CoreTests.test_bad_time) ... ok
+test_before_first (test_core.CoreTests.test_before_first) ... ok
+test_boundary (test_core.CoreTests.test_boundary) ... ok
+test_dedup (test_core.CoreTests.test_dedup) ... ok
+test_ingest_order_invariant (test_core.CoreTests.test_ingest_order_invariant) ... ok
+test_late (test_core.CoreTests.test_late) ... ok
+test_sequence_winner (test_core.CoreTests.test_sequence_winner) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.017s
+
+OK

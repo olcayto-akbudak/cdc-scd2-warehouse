@@ -1,0 +1,7 @@
+[project]
+name = "cdc-scd2-warehouse"
+version = "0.1.0"
+description = "Geç Gelen CDC ve SCD2 Ambarı"
+requires-python = ">=3.12"
+[tool.ruff]
+line-length = 120

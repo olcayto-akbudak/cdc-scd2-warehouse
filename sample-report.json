@@ -1,0 +1,67 @@
+{
+  "batches": [
+    {
+      "affected_keys": [
+        "C1"
+      ],
+      "duplicate_events": 0
+    },
+    {
+      "affected_keys": [
+        "C1"
+      ],
+      "duplicate_events": 0
+    }
+  ],
+  "history": [
+    {
+      "key": "C1",
+      "from": 10,
+      "to": 20,
+      "source_seq": 1,
+      "payload": {
+        "tier": "basic"
+      },
+      "deleted": false
+    },
+    {
+      "key": "C1",
+      "from": 20,
+      "to": 30,
+      "source_seq": 2,
+      "payload": {
+        "tier": "gold"
+      },
+      "deleted": false
+    },
+    {
+      "key": "C1",
+      "from": 30,
+      "to": null,
+      "source_seq": 3,
+      "payload": {},
+      "deleted": true
+    }
+  ],
+  "queries": [
+    {
+      "key": "C1",
+      "at": 19,
+      "value": {
+        "tier": "basic"
+      }
+    },
+    {
+      "key": "C1",
+      "at": 20,
+      "value": {
+        "tier": "gold"
+      }
+    },
+    {
+      "key": "C1",
+      "at": 30,
+      "value": null
+    }
+  ]
+}

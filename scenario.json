@@ -1,0 +1,47 @@
+{
+  "batches": [
+    [
+      {
+        "id": "E1",
+        "key": "C1",
+        "at": 10,
+        "seq": 1,
+        "payload": {
+          "tier": "basic"
+        }
+      },
+      {
+        "id": "E3",
+        "key": "C1",
+        "at": 30,
+        "seq": 3,
+        "deleted": true
+      }
+    ],
+    [
+      {
+        "id": "E2",
+        "key": "C1",
+        "at": 20,
+        "seq": 2,
+        "payload": {
+          "tier": "gold"
+        }
+      }
+    ]
+  ],
+  "queries": [
+    {
+      "key": "C1",
+      "at": 19
+    },
+    {
+      "key": "C1",
+      "at": 20
+    },
+    {
+      "key": "C1",
+      "at": 30
+    }
+  ]
+}
